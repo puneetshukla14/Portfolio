@@ -7,7 +7,7 @@ const ClientLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2500)
+    const timer = setTimeout(() => setIsLoading(false), 3000)
     return () => clearTimeout(timer)
   }, [])
 
